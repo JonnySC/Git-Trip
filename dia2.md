@@ -1,0 +1,1 @@
+Conceptos básicos de git: repositorios, commits, ramas, etiquetas y remotos. 

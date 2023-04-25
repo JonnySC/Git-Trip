@@ -1,0 +1,1 @@
+Introducción a git: qué es, para qué sirve, cómo funciona y cómo instalarlo.

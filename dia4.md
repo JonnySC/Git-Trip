@@ -1,0 +1,1 @@
+Flujo de trabajo con git: cómo crear y gestionar ramas, cómo fusionar cambios, cómo resolver conflictos y cómo colaborar con otros desarrolladores.
