@@ -32,9 +32,9 @@ Para usar git, se necesita instalarlo en el ordenador donde se va a trabajar, y 
 #### Agregar usuario y correo
 
 ```
-git config --global user.name "carlogilmar"
+git config --global user.name "elingenierotrip"
 
-git config --global user.email "carlo@makingdevs.com"
+git config --global user.email "elingenierotrip@gmail.com"
 ```
 
 #### Comprobar configuración
