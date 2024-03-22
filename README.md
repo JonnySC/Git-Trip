@@ -1,43 +1,59 @@
 # Git-Trip
-Pequeño repositorio del ingeniero trip sobre GIT
 
 <img src="imagenes/Portada-de-repo-de-git.gif">
 
-Vercion online: proximamente
-
-# Abril 2023
-
-Herramientas a utilizar
-
-* Versión reciente de git \(2.40.1\)
-* Cuenta de GitHub
-* Editor de texto
-
-#### 1. Introducción a git
-
-* Qué es
-* Cómo funciona
-
-Tooling para desarrollo.
-
-* Editor de texto 
-* Instalación y configuración de Git
-
-#### 2. Conceptos básicos de git: repositorios, commits, ramas, etiquetas y remotos.
+<p align="center"> 
+  <img src="https://img.shields.io/github/sponsors/JonnySC" />
+<a href="CONTRIBUTING.md#pull-requests"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"></a>
+  <img src="https://img.shields.io/twitch/status/michingeniero" />
+  <img src="https://img.shields.io/discord/1025468252022915232?logo=discord" alt="chat on Discord">
+</p>
 
 
-#### 3. Comandos básicos de git: init, clone, status, add, commit, log, diff, checkout, branch, tag y push.
+## ¡Bienvenido al repositorio del Curso de Git!
+
+Este repositorio contiene todos los recursos necesarios para aprender y dominar Git, un sistema de control de versiones imprescindible para cualquier desarrollador. Desde conceptos básicos hasta técnicas avanzadas, este curso te proporcionará los conocimientos y habilidades necesarias para aprovechar al máximo Git en tus proyectos de desarrollo de software.
+
+## Introducción a Git
+
+En la sección de introducción, exploraremos qué es Git, cómo funciona y las herramientas esenciales para su implementación en el desarrollo de proyectos.
+
+- **Qué es Git y cómo funciona**: Aprenderás sobre la naturaleza distribuida de Git y cómo gestiona eficientemente el historial de cambios en un proyecto.
+  
+- **Tooling para desarrollo con Git**: Descubre las herramientas esenciales, incluyendo editores de texto y la instalación y configuración correcta de Git en tu entorno de desarrollo.
+
+## Conceptos básicos de Git
+
+Antes de sumergirse en el uso práctico de Git, es esencial comprender los conceptos fundamentales que rigen su funcionamiento. Esto incluye entender los repositorios, commits, ramas, etiquetas y remotos.
+
+## Comandos básicos de Git
+
+En esta sección, aprenderás los comandos esenciales de Git, desde la inicialización de un repositorio hasta la colaboración con otros desarrolladores a través de operaciones como clonar, añadir, confirmar y empujar cambios.
+
+## Flujo de trabajo con Git
+
+Descubre cómo trabajar de manera efectiva con Git, incluyendo la creación y gestión de ramas, la fusión de cambios y la resolución de conflictos que puedan surgir durante el desarrollo colaborativo.
+
+## Buenas prácticas con Git
+
+Aprende las mejores prácticas para utilizar Git de manera eficiente, desde escribir mensajes de confirmación claros y concisos hasta mantener un historial limpio y ordenado.
+
+## Herramientas y recursos adicionales con Git
+
+Explora herramientas y recursos adicionales que pueden mejorar tu experiencia de desarrollo con Git, incluyendo interfaces gráficas y servicios en la nube como GitHub.
 
 
-#### 4. Flujo de trabajo con git: cómo crear y gestionar ramas, cómo fusionar cambios, cómo resolver conflictos y cómo colaborar con otros desarrolladores.
+## Herramientas a utilizar
 
+Asegúrate de tener instalada la siguiente herramienta para sacar el máximo provecho del curso:
 
-#### 5. Buenas prácticas con git: cómo escribir mensajes de commit claros y concisos, cómo mantener un historial limpio y ordenado, cómo usar las etiquetas para marcar versiones y cómo seguir un modelo de ramificación como git-flow o GitHub flow. 
+- **Versión reciente de Git (2.40.1)**: Es importante tener instalada la última versión de Git para acceder a todas las funcionalidades y mejoras más recientes.
+  
+- **Cuenta de GitHub**: Una cuenta en GitHub te permitirá aprovechar al máximo las funcionalidades de colaboración y trabajo en equipo que ofrece esta plataforma.
 
+- **Editor de texto**: Utiliza tu editor de texto favorito para escribir y modificar código durante el curso.
 
-
-#### 6. Herramientas y recursos adicionales con git: cómo usar interfaces gráficas como GitKraken o Sourcetree, cómo usar servicios en la nube como GitHub y cómo consultar la documentación oficial
-
+¡Únete a nosotros en este emocionante viaje para dominar Git y llevar tu desarrollo de software al siguiente nivel!
 
 
 
