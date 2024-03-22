@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.layout {
+    width: 100%;
+  
+    display: flex;
+    gap: 16px;
+  }
+  
+  .grow1 { flex-grow: 1; }
+
+  .container {
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px; /* Agrega un margen inferior de 10px a los elementos h1 y h2 */
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+p, ul, li {
+    
+    line-height: 1.6;
+    margin-bottom: 20px; /* Agrega un margen inferior de 20px a los párrafos */
+}
+
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: #ececec;
+}
+
+.logo {
+    max-width: 5rem;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #1c1c1c;
+}
+
+.abrir-menu,
+.cerrar-menu {
+    display: none;
+}
+
+@media screen and (max-width: 11110px) {
+    .abrir-menu,
+    .cerrar-menu {
+        display: block;
+        border: 0;
+        font-size: 1.75rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu {
+        color: #1c1c1c;
+    }
+
+    .cerrar-menu {
+        color: #ececec;
+    }
+
+    .nav {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: first baseline;
+        gap: 1rem;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: #1c1c1c;
+        padding: 2rem;
+        
+    }
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    .nav-list {
+        flex-direction: column;
+        align-items: first baseline;
+    }
+
+    .nav-list li a {
+        color: #ecececec;
+    }
+}
+
+  /* Estilos para el modo oscuro */
+  body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+  /* Estilos checkbox modo oscuro */
+  .flipswitch {
+    position: absolute;
+    right: 5px;
+    width: 90px;
+  }
+  
+  .flipswitch input[type=checkbox] {
+    display: none;
+  }
+  
+  .flipswitch-label {
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid #999999;
+    border-radius: 50px;
+  }
+  
+  .flipswitch-inner {
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+  }
+  
+  .flipswitch-inner:before, .flipswitch-inner:after {
+    float: left;
+    width: 50%;
+    height: 30px;
+    padding: 0;
+    line-height: 30px;
+    font-size: 20px;
+    color: white;
+    font-family: Trebuchet, Arial, sans-serif;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+  
+  .flipswitch-inner:before {
+    content: "ON";
+    padding-left: 18px;
+    background-color: #437A99;
+    color: #FFFFFF;
+  }
+  
+  .flipswitch-inner:after {
+    content: "OFF";
+    padding-right: 18px;
+    background-color: #FFFFFF;
+    color: #437A99;
+    text-align: right;
+  }
+  
+  .flipswitch-switch {
+    width: 35px;
+    margin: -2.5px;
+    background: #FFFFFF;
+    border: 1px solid #999999;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 67px;
+    transition: all 0.3s ease-in 0s;
+  }
+  
+  .flipswitch-cb:checked + .flipswitch-label .flipswitch-inner {
+    margin-left: 0;
+  }
+  
+  .flipswitch-cb:checked + .flipswitch-label .flipswitch-switch {
+    right: 0;
+  }
+  

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GITTRIP</title>
+
+    <!-- Conexión con el archivo CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
+    <link rel="stylesheet" type="text/css" href="styles/buttons.scss">
+    
+</head>
+<body>
+<header>
+    <section class="layout">
+        <div class="grow1"><button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
+            <nav class="nav" id="nav">
+                <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
+                <ul class="nav-list">
+                    <li><a href="#">Introducción a Git</a></li>
+                    <li><a href="#">Conceptos básicos de Git</a></li>
+                    <li><a href="#">Comandos básicos de Git</a></li>
+                    <li><a href="#">Flujo de trabajo con Git</a></li>
+                    <li><a href="#">Buenas prácticas con Git</a></li>
+                    <li><a href="#">Herramientas y recursos adicionales con Git</a></li>
+                    <li><a href="#">Herramientas a utilizar</a></li>
+                    
+                </ul>
+            </nav></div>
+        <div class="grow1"><h1 style="color: black; text-align: center;">GITTRIP</h1></div>
+        <div class="grow1"><div class="flipswitch">
+            <input checked="" id="fs" class="flipswitch-cb" name="flipswitch" onclick="toggleDarkMode()" type="checkbox">
+            <label for="fs" class="flipswitch-label">
+                <div class="flipswitch-inner"></div>
+                <div class="flipswitch-switch"></div>
+            </label>
+        </div></div>
+      </section>
+</header>
+<div class="container">
+    <h1>¡Bienvenido al repositorio del Curso de Git!</h1>
+    <p>Este repositorio contiene todos los recursos necesarios para aprender y dominar Git, un sistema de control de versiones imprescindible para cualquier desarrollador. 
+        <br>Desde conceptos básicos hasta técnicas avanzadas, este curso te proporcionará los conocimientos y habilidades necesarias para aprovechar al máximo Git en tus proyectos de desarrollo de software.</p>
+    
+    <h2>Introducción a Git</h2>
+    <p>En la sección de introducción, exploraremos qué es Git, cómo funciona y las herramientas esenciales para su implementación en el desarrollo de proyectos.</p>
+    <ul>
+        <li><strong>Qué es Git y cómo funciona:</strong> Aprenderás sobre la naturaleza distribuida de Git y cómo gestiona eficientemente el historial de cambios en un proyecto.</li>
+        <li><strong>Tooling para desarrollo con Git:</strong> Descubre las herramientas esenciales, incluyendo editores de texto y la instalación y configuración correcta de Git en tu entorno de desarrollo.</li>
+    </ul>
+    
+    <h2>Conceptos básicos de Git</h2>
+    <p>Antes de sumergirse en el uso práctico de Git, es esencial comprender los conceptos fundamentales que rigen su funcionamiento. Esto incluye entender los repositorios, commits, ramas, etiquetas y remotos.</p>
+    
+    <h2>Comandos básicos de Git</h2>
+    <p>En esta sección, aprenderás los comandos esenciales de Git, desde la inicialización de un repositorio hasta la colaboración con otros desarrolladores a través de operaciones como clonar, añadir, confirmar y empujar cambios.</p>
+    
+    <h2>Flujo de trabajo con Git</h2>
+    <p>Descubre cómo trabajar de manera efectiva con Git, incluyendo la creación y gestión de ramas, la fusión de cambios y la resolución de conflictos que puedan surgir durante el desarrollo colaborativo.</p>
+    
+    <h2>Buenas prácticas con Git</h2>
+    <p>Aprende las mejores prácticas para utilizar Git de manera eficiente, desde escribir mensajes de confirmación claros y concisos hasta mantener un historial limpio y ordenado.</p>
+    
+    <h2>Herramientas y recursos adicionales con Git</h2>
+    <p>Explora herramientas y recursos adicionales que pueden mejorar tu experiencia de desarrollo con Git, incluyendo interfaces gráficas y servicios en la nube como GitHub.</p>
+    
+    <h2>Herramientas a utilizar</h2>
+    <p>Asegúrate de tener instalada la siguiente herramienta para sacar el máximo provecho del curso:</p>
+    <ul>
+        <li>Versión reciente de Git (2.40.1): Es importante tener instalada la última versión de Git para acceder a todas las funcionalidades y mejoras más recientes.</li>
+        <li>Cuenta de GitHub: Una cuenta en GitHub te permitirá aprovechar al máximo las funcionalidades de colaboración y trabajo en equipo que ofrece esta plataforma.</li>
+        <li>Editor de texto: Utiliza tu editor de texto favorito para escribir y modificar código durante el curso.</li>
+    </ul>
+    
+    <p>¡Únete a nosotros en este emocionante viaje para dominar Git y llevar tu desarrollo de software al siguiente nivel!</p>
+</div>
+
+    <!-- Conexión con el archivo JavaScript -->
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>
