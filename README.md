@@ -87,7 +87,7 @@ We have a few channels for contact:
 
 ¡Agradecemos tu interés en contribuir al proyecto!
 
-El Proyecto X es un curso en vivo que se desarrollará en el canal de [Twitch de michingeniero](https://www.twitch.tv/michingeniero). Los participantes y colaboradores son bienvenidos a contribuir al proyecto de las siguientes maneras:
+El Proyecto GITtrip se trasmite en el canal de [Twitch de michingeniero](https://www.twitch.tv/michingeniero). Los participantes y colaboradores son bienvenidos a contribuir al proyecto de las siguientes maneras:
 
 1. **Fork del repositorio**: Si deseas realizar cambios en el proyecto, te animamos a hacer un fork de este repositorio. Esto te permitirá hacer cambios en tu propia copia del proyecto sin afectar el repositorio principal.
 
