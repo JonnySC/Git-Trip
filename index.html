@@ -74,78 +74,84 @@
         <br}+¿</p>
     
         <h2>Introducción a Git</h2>
-        <p>En la sección de introducción, exploraremos qué es Git, cómo funciona y las herramientas esenciales para su implementación en el desarrollo de proyectos.</p>
+<p>En esta sección, exploraremos qué es Git, cómo funciona y las herramientas esenciales para su implementación en el desarrollo de proyectos.</p>
+<ul>
+    <li><strong>¿Qué es Git y cómo funciona?</strong><br>
+        - Git es un sistema de control de versiones distribuido.<br>
+        - Gestiona eficientemente el historial de cambios en un proyecto.<br>
+        - Su naturaleza distribuida permite que cada colaborador tenga una copia completa del repositorio.</li>
+    <li><strong>Herramientas para el desarrollo con Git:</strong><br>
+        Antes de sumergirse en el uso práctico de Git, es esencial comprender las siguientes herramientas:
         <ul>
-            <li><strong>Qué es Git y cómo funciona:</strong> <br> -Git es un sistema de control de versiones distribuido. <br>-Gestiona eficientemente el historial de cambios en un proyecto. <br>-Su naturaleza distribuida permite que cada colaborador tenga una copia completa del repositorio.</li>
-            <li><strong>Tooling para desarrollo con Git:</strong> <p>Antes de sumergirse en el uso práctico de Git, es esencial comprender las siguientes herramientas:</p>
-                <ul>
-                    
-                    <li><strong>Terminal:</strong> Si prefieres trabajar en la línea de comandos, puedes utilizar la terminal para ejecutar comandos Git directamente. Algunos comandos básicos incluyen git init, git clone, git add, git commit y git push.</li>
-                    <li><strong>Servicios de alojamiento de Git:</strong> Plataformas como GitHub, GitLab, Bitbucket y SourceForge ofrecen servicios de alojamiento para tus repositorios Git. Puedes crear, colaborar y compartir proyectos con otros desarrolladores utilizando estas plataformas.</li>
-                    <li><strong>Editores de texto:</strong> Aunque no es específico de Git, tener un buen editor de texto es crucial para escribir y editar código. Algunos editores populares son Visual Studio Code, Sublime Text, Atom y Vim.</li>
-                </ul>
-                <p>Recuerda que elegir las herramientas adecuadas depende de tus preferencias personales y del flujo de trabajo de tu equipo. ¡Explora y encuentra las que mejor se adapten a ti!</p></li>
+            <li><strong>Terminal:</strong> Si prefieres trabajar en la línea de comandos, puedes utilizar la terminal para ejecutar comandos Git directamente. Algunos comandos básicos incluyen git init, git clone, git add, git commit y git push.</li>
+            <li><strong>Servicios de alojamiento de Git:</strong> Plataformas como GitHub, GitLab, Bitbucket y SourceForge ofrecen servicios de alojamiento para tus repositorios Git. Puedes crear, colaborar y compartir proyectos con otros desarrolladores utilizando estas plataformas.</li>
+            <li><strong>Editores de texto:</strong> Aunque no es específico de Git, tener un buen editor de texto es crucial para escribir y editar código. Algunos editores populares son Visual Studio Code, Sublime Text, Atom y Vim.</li>
         </ul>
+        Recuerda que elegir las herramientas adecuadas depende de tus preferencias personales y del flujo de trabajo de tu equipo. ¡Explora y encuentra las que mejor se adapten a ti!</li>
+</ul>
+
     
-        <h2>Conceptos Fundamentales de Git</h2>
-        <p>Antes de sumergirse en el uso práctico de Git, es esencial comprender los siguientes conceptos:</p>
+<h2>Conceptos Fundamentales de Git</h2>
+<p>Antes de sumergirse en el uso práctico de Git, es esencial comprender los siguientes conceptos:</p>
+<ul>
+    <li><strong>Repositorios:</strong> Un repositorio es un almacén de código fuente que contiene todos los archivos y la historia de cambios de un proyecto. Puede ser local (en tu máquina) o remoto (en un servidor). Los repositorios remotos son comunes en plataformas como GitHub, GitLab o Bitbucket.</li>
+    <li><strong>Commits:</strong> Un commit representa un conjunto de cambios realizados en el código. Cada commit tiene un mensaje descriptivo que explica qué se modificó. Los commits forman el historial de cambios del proyecto.</li>
+    <li><strong>Ramas:</strong> Las ramas son líneas de desarrollo independientes dentro del repositorio. Permiten trabajar en nuevas funcionalidades o correcciones sin afectar la rama principal (generalmente llamada "master" o "main"). Por ejemplo, puedes crear una rama para desarrollar una nueva característica y luego fusionarla con la rama principal.</li>
+    <li><strong>Etiquetas:</strong> Las etiquetas son puntos específicos en la historia del repositorio. Se utilizan para marcar versiones estables o hitos importantes. A menudo se usan para identificar versiones de lanzamiento.</li>
+    <li><strong>Remotos:</strong> Los remotos son repositorios alojados en servidores externos (como GitHub o GitLab). Facilitan la colaboración y el intercambio de código entre desarrolladores. Puedes clonar, empujar y tirar cambios hacia y desde repositorios remotos.</li>
+</ul>
+<p>Recuerda que estos conceptos son esenciales para comprender cómo funciona Git y cómo aprovecharlo al máximo en tu flujo de trabajo.</p>
+
+<h2>Comandos básicos de Git</h2>
+<ul>
+    <li><code>git init</code>: Crea un nuevo repositorio local de Git. Puedes ejecutarlo en el directorio actual para iniciar un repositorio o especificar un nombre de proyecto para crear un repositorio en un directorio nuevo.</li>
+    <li><code>git clone</code>: Copia un repositorio existente. Si el repositorio está en un servidor remoto, utiliza la siguiente sintaxis: <code>git clone nombredeusuario@host:/path/to/repository</code>. Para clonar un repositorio local, simplemente usa: <code>git clone /path/to/repository</code>.</li>
+    <li><code>git add</code>: Agrega archivos al área de preparación (staging). Por ejemplo, para indexar el archivo <code>temp.txt</code>, ejecuta: <code>git add temp.txt</code>.</li>
+    <li><code>git commit</code>: Crea una instantánea de los cambios y los guarda en el directorio Git. Acompaña el commit con un mensaje descriptivo: <code>git commit -m "Mensaje del commit aquí"</code>.</li>
+    <li><code>git config</code>: Establece configuraciones específicas de usuario, como el correo electrónico y el nombre de usuario. Por ejemplo:
         <ul>
-            <li><strong>Repositorios:</strong> Un repositorio es un almacén de código fuente que contiene todos los archivos y la historia de cambios de un proyecto. Puede ser local (en tu máquina) o remoto (en un servidor). Los repositorios remotos son comunes en plataformas como GitHub, GitLab o Bitbucket.</li>
-            <li><strong>Commits:</strong> Un commit representa un conjunto de cambios realizados en el código. Cada commit tiene un mensaje descriptivo que explica qué se modificó. Los commits forman el historial de cambios del proyecto.</li>
-            <li><strong>Ramas:</strong> Las ramas son líneas de desarrollo independientes dentro del repositorio. Permiten trabajar en nuevas funcionalidades o correcciones sin afectar la rama principal (generalmente llamada "master" o "main"). Por ejemplo, puedes crear una rama para desarrollar una nueva característica y luego fusionarla con la rama principal.</li>
-            <li><strong>Etiquetas:</strong> Las etiquetas son puntos específicos en la historia del repositorio. Se utilizan para marcar versiones estables o hitos importantes. A menudo se usan para identificar versiones de lanzamiento.</li>
-            <li><strong>Remotos:</strong> Los remotos son repositorios alojados en servidores externos (como GitHub o GitLab). Facilitan la colaboración y el intercambio de código entre desarrolladores. Puedes clonar, empujar y tirar cambios hacia y desde repositorios remotos.</li>
+            <li>Configurar un email global: <code>git config --global user.email tuemail@ejemplo.com</code>.</li>
+            <li>Configurar un email local para un repositorio específico: <code>git config --local user.email tuemail@ejemplo.com</code>.</li>
         </ul>
-        <p>Recuerda que estos conceptos son esenciales para comprender cómo funciona Git y cómo aprovecharlo al máximo en tu flujo de trabajo. ¡Buena suerte con tu presentación!</p>
-    <h2>Comandos básicos de Git</h2>
-   
-    <ul>
-        <li><code>git init</code>: Crea un nuevo repositorio local de Git. Puedes ejecutarlo en el directorio actual para iniciar un repositorio o especificar un nombre de proyecto para crear un repositorio en un directorio nuevo.</li>
-        <li><code>git clone</code>: Copia un repositorio existente. Si el repositorio está en un servidor remoto, utiliza la siguiente sintaxis: <code>git clone nombredeusuario@host:/path/to/repository</code>. Para clonar un repositorio local, simplemente usa: <code>git clone /path/to/repository</code>.</li>
-        <li><code>git add</code>: Agrega archivos al área de preparación (staging). Por ejemplo, para indexar el archivo <code>temp.txt</code>, ejecuta: <code>git add temp.txt</code>.</li>
-        <li><code>git commit</code>: Crea una instantánea de los cambios y los guarda en el directorio Git. Acompaña el commit con un mensaje descriptivo: <code>git commit -m "Mensaje del commit aquí"</code>.</li>
-        <li><code>git config</code>: Establece configuraciones específicas de usuario, como el correo electrónico y el nombre de usuario. Por ejemplo:
-            <ul>
-                <li>Configurar un email global: <code>git config --global user.email tuemail@ejemplo.com</code>.</li>
-                <li>Configurar un email local para un repositorio específico: <code>git config --local user.email tuemail@ejemplo.com</code>.</li>
-            </ul>
-        </li>
-        <li><code>git status</code>: Muestra la lista de archivos modificados, así como los archivos preparados o confirmados.</li>
-    </ul>
+    </li>
+    <li><code>git status</code>: Muestra la lista de archivos modificados, así como los archivos preparados o confirmados.</li>
+</ul>
+
     
-    <h2>Flujo de trabajo con Git</h2>
-    <ol>
-        <li>
-            <strong>Creación de una Rama de Funcionalidad:</strong>
-            <p>Cada nueva funcionalidad o corrección de errores se desarrolla en una rama separada.</p>
-            <p>Ejemplo: <code>feature/nueva-funcionalidad</code>.</p>
-        </li>
-        <li>
-            <strong>Desarrollo y Confirmación:</strong>
-            <p>Realiza cambios en la rama de funcionalidad.</p>
-            <p>Confirma los cambios con mensajes descriptivos.</p>
-        </li>
-        <li>
-            <strong>Solicitud de Extracción (Pull Request):</strong>
-            <p>Abre una solicitud de extracción para fusionar la rama de funcionalidad con <code>main</code>.</p>
-            <p>Revisa los cambios y colabora con otros miembros del equipo.</p>
-        </li>
-        <li>
-            <strong>Revisión y Aprobación:</strong>
-            <p>Otros revisan el código y proporcionan comentarios.</p>
-            <p>Una vez aprobada, se fusiona la rama de funcionalidad con <code>main</code>.</p>
-        </li>
-        <li>
-            <strong>Despliegue:</strong>
-            <p>Los cambios confirmados en <code>main</code> se despliegan en producción.</p>
-        </li>
-    </ol>
+<h2>Flujo de trabajo con Git</h2>
+<ol>
+    <li>
+        <strong>Creación de una Rama de Funcionalidad:</strong>
+        <p>Cada nueva funcionalidad o corrección de errores se desarrolla en una rama separada.</p>
+        <p>Ejemplo: <code>feature/nueva-funcionalidad</code>.</p>
+    </li>
+    <li>
+        <strong>Desarrollo y Confirmación:</strong>
+        <p>Realiza cambios en la rama de funcionalidad.</p>
+        <p>Confirma los cambios con mensajes descriptivos.</p>
+    </li>
+    <li>
+        <strong>Solicitud de Extracción (Pull Request):</strong>
+        <p>Abre una solicitud de extracción para fusionar la rama de funcionalidad con <code>main</code>.</p>
+        <p>Revisa los cambios y colabora con otros miembros del equipo.</p>
+    </li>
+    <li>
+        <strong>Revisión y Aprobación:</strong>
+        <p>Otros revisan el código y proporcionan comentarios.</p>
+        <p>Una vez aprobada, se fusiona la rama de funcionalidad con <code>main</code>.</p>
+    </li>
+    <li>
+        <strong>Despliegue:</strong>
+        <p>Los cambios confirmados en <code>main</code> se despliegan en producción.</p>
+    </li>
+</ol>
+
     
     <h2>Buenas prácticas con Git</h2>
     <ol>
         <li>
             <strong>Escribe Mensajes de Commit Significativos:</strong>
-            <p>Usa el <strong>verbo imperativo</strong> en tus mensajes de commit (por ejemplo, "Add", "Change", "Fix", "Remove") si necesitas mas información puedes vistar este sitio https://www.conventionalcommits.org/en/v1.0.0/.</p>
+            <p>Usa el <strong>verbo imperativo</strong> en tus mensajes de commit (por ejemplo, "Add", "Change", "Fix", "Remove") si necesitas mas información puedes visitar este sitio https://www.conventionalcommits.org/en/v1.0.0/.</p>
             <p>Limita el mensaje a <strong>50 caracteres</strong> para el título del commit.</p>
             <p>Proporciona <strong>contexto adicional</strong> en el cuerpo del mensaje si es necesario.</p>
         </li>
