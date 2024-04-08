@@ -69,41 +69,126 @@
 </div>
 <br><br>
 <div class="contenedor2">
-    <h1>¡Bienvenido al repositorio del Curso de Git!</h1>
-    <p>Este repositorio contiene todos los recursos necesarios para aprender y dominar Git, un sistema de control de versiones imprescindible para cualquier desarrollador. 
-        <br>Desde conceptos básicos hasta técnicas avanzadas, este curso te proporcionará los conocimientos y habilidades necesarias para aprovechar al máximo Git en tus proyectos de desarrollo de software.</p>
+    <h1>¡Bienvenido a la webapp del taller introductorio de Git!</h1>
+    <p>Este sitio web contiene el contenido interactivo para el taller. 
+        <br}+¿</p>
     
-    <h2>Introducción a Git</h2>
-    <p>En la sección de introducción, exploraremos qué es Git, cómo funciona y las herramientas esenciales para su implementación en el desarrollo de proyectos.</p>
-    <ul>
-        <li><strong>Qué es Git y cómo funciona:</strong> Aprenderás sobre la naturaleza distribuida de Git y cómo gestiona eficientemente el historial de cambios en un proyecto.</li>
-        <li><strong>Tooling para desarrollo con Git:</strong> Descubre las herramientas esenciales, incluyendo editores de texto y la instalación y configuración correcta de Git en tu entorno de desarrollo.</li>
-    </ul>
+        <h2>Introducción a Git</h2>
+        <p>En la sección de introducción, exploraremos qué es Git, cómo funciona y las herramientas esenciales para su implementación en el desarrollo de proyectos.</p>
+        <ul>
+            <li><strong>Qué es Git y cómo funciona:</strong> <br> -Git es un sistema de control de versiones distribuido. <br>-Gestiona eficientemente el historial de cambios en un proyecto. <br>-Su naturaleza distribuida permite que cada colaborador tenga una copia completa del repositorio.</li>
+            <li><strong>Tooling para desarrollo con Git:</strong> <p>Antes de sumergirse en el uso práctico de Git, es esencial comprender las siguientes herramientas:</p>
+                <ul>
+                    
+                    <li><strong>Terminal:</strong> Si prefieres trabajar en la línea de comandos, puedes utilizar la terminal para ejecutar comandos Git directamente. Algunos comandos básicos incluyen git init, git clone, git add, git commit y git push.</li>
+                    <li><strong>Servicios de alojamiento de Git:</strong> Plataformas como GitHub, GitLab, Bitbucket y SourceForge ofrecen servicios de alojamiento para tus repositorios Git. Puedes crear, colaborar y compartir proyectos con otros desarrolladores utilizando estas plataformas.</li>
+                    <li><strong>Editores de texto:</strong> Aunque no es específico de Git, tener un buen editor de texto es crucial para escribir y editar código. Algunos editores populares son Visual Studio Code, Sublime Text, Atom y Vim.</li>
+                </ul>
+                <p>Recuerda que elegir las herramientas adecuadas depende de tus preferencias personales y del flujo de trabajo de tu equipo. ¡Explora y encuentra las que mejor se adapten a ti!</p></li>
+        </ul>
     
-    <h2>Conceptos básicos de Git</h2>
-    <p>Antes de sumergirse en el uso práctico de Git, es esencial comprender los conceptos fundamentales que rigen su funcionamiento. Esto incluye entender los repositorios, commits, ramas, etiquetas y remotos.</p>
-    
+        <h2>Conceptos Fundamentales de Git</h2>
+        <p>Antes de sumergirse en el uso práctico de Git, es esencial comprender los siguientes conceptos:</p>
+        <ul>
+            <li><strong>Repositorios:</strong> Un repositorio es un almacén de código fuente que contiene todos los archivos y la historia de cambios de un proyecto. Puede ser local (en tu máquina) o remoto (en un servidor). Los repositorios remotos son comunes en plataformas como GitHub, GitLab o Bitbucket.</li>
+            <li><strong>Commits:</strong> Un commit representa un conjunto de cambios realizados en el código. Cada commit tiene un mensaje descriptivo que explica qué se modificó. Los commits forman el historial de cambios del proyecto.</li>
+            <li><strong>Ramas:</strong> Las ramas son líneas de desarrollo independientes dentro del repositorio. Permiten trabajar en nuevas funcionalidades o correcciones sin afectar la rama principal (generalmente llamada "master" o "main"). Por ejemplo, puedes crear una rama para desarrollar una nueva característica y luego fusionarla con la rama principal.</li>
+            <li><strong>Etiquetas:</strong> Las etiquetas son puntos específicos en la historia del repositorio. Se utilizan para marcar versiones estables o hitos importantes. A menudo se usan para identificar versiones de lanzamiento.</li>
+            <li><strong>Remotos:</strong> Los remotos son repositorios alojados en servidores externos (como GitHub o GitLab). Facilitan la colaboración y el intercambio de código entre desarrolladores. Puedes clonar, empujar y tirar cambios hacia y desde repositorios remotos.</li>
+        </ul>
+        <p>Recuerda que estos conceptos son esenciales para comprender cómo funciona Git y cómo aprovecharlo al máximo en tu flujo de trabajo. ¡Buena suerte con tu presentación!</p>
     <h2>Comandos básicos de Git</h2>
-    <p>En esta sección, aprenderás los comandos esenciales de Git, desde la inicialización de un repositorio hasta la colaboración con otros desarrolladores a través de operaciones como clonar, añadir, confirmar y empujar cambios.</p>
+   
+    <ul>
+        <li><code>git init</code>: Crea un nuevo repositorio local de Git. Puedes ejecutarlo en el directorio actual para iniciar un repositorio o especificar un nombre de proyecto para crear un repositorio en un directorio nuevo.</li>
+        <li><code>git clone</code>: Copia un repositorio existente. Si el repositorio está en un servidor remoto, utiliza la siguiente sintaxis: <code>git clone nombredeusuario@host:/path/to/repository</code>. Para clonar un repositorio local, simplemente usa: <code>git clone /path/to/repository</code>.</li>
+        <li><code>git add</code>: Agrega archivos al área de preparación (staging). Por ejemplo, para indexar el archivo <code>temp.txt</code>, ejecuta: <code>git add temp.txt</code>.</li>
+        <li><code>git commit</code>: Crea una instantánea de los cambios y los guarda en el directorio Git. Acompaña el commit con un mensaje descriptivo: <code>git commit -m "Mensaje del commit aquí"</code>.</li>
+        <li><code>git config</code>: Establece configuraciones específicas de usuario, como el correo electrónico y el nombre de usuario. Por ejemplo:
+            <ul>
+                <li>Configurar un email global: <code>git config --global user.email tuemail@ejemplo.com</code>.</li>
+                <li>Configurar un email local para un repositorio específico: <code>git config --local user.email tuemail@ejemplo.com</code>.</li>
+            </ul>
+        </li>
+        <li><code>git status</code>: Muestra la lista de archivos modificados, así como los archivos preparados o confirmados.</li>
+    </ul>
     
     <h2>Flujo de trabajo con Git</h2>
-    <p>Descubre cómo trabajar de manera efectiva con Git, incluyendo la creación y gestión de ramas, la fusión de cambios y la resolución de conflictos que puedan surgir durante el desarrollo colaborativo.</p>
+    <ol>
+        <li>
+            <strong>Creación de una Rama de Funcionalidad:</strong>
+            <p>Cada nueva funcionalidad o corrección de errores se desarrolla en una rama separada.</p>
+            <p>Ejemplo: <code>feature/nueva-funcionalidad</code>.</p>
+        </li>
+        <li>
+            <strong>Desarrollo y Confirmación:</strong>
+            <p>Realiza cambios en la rama de funcionalidad.</p>
+            <p>Confirma los cambios con mensajes descriptivos.</p>
+        </li>
+        <li>
+            <strong>Solicitud de Extracción (Pull Request):</strong>
+            <p>Abre una solicitud de extracción para fusionar la rama de funcionalidad con <code>main</code>.</p>
+            <p>Revisa los cambios y colabora con otros miembros del equipo.</p>
+        </li>
+        <li>
+            <strong>Revisión y Aprobación:</strong>
+            <p>Otros revisan el código y proporcionan comentarios.</p>
+            <p>Una vez aprobada, se fusiona la rama de funcionalidad con <code>main</code>.</p>
+        </li>
+        <li>
+            <strong>Despliegue:</strong>
+            <p>Los cambios confirmados en <code>main</code> se despliegan en producción.</p>
+        </li>
+    </ol>
     
     <h2>Buenas prácticas con Git</h2>
-    <p>Aprende las mejores prácticas para utilizar Git de manera eficiente, desde escribir mensajes de confirmación claros y concisos hasta mantener un historial limpio y ordenado.</p>
+    <ol>
+        <li>
+            <strong>Escribe Mensajes de Commit Significativos:</strong>
+            <p>Usa el <strong>verbo imperativo</strong> en tus mensajes de commit (por ejemplo, "Add", "Change", "Fix", "Remove") si necesitas mas información puedes vistar este sitio https://www.conventionalcommits.org/en/v1.0.0/.</p>
+            <p>Limita el mensaje a <strong>50 caracteres</strong> para el título del commit.</p>
+            <p>Proporciona <strong>contexto adicional</strong> en el cuerpo del mensaje si es necesario.</p>
+        </li>
+        <li>
+            <strong>Crea Ramas para Cada Funcionalidad o Corrección:</strong>
+            <p>Desarrolla cada nueva funcionalidad o corrección en una <strong>rama separada</strong>.</p>
+            <p>Por ejemplo: <code>feature/nueva-funcionalidad</code>.</p>
+        </li>
+        <li>
+            <strong>Actualiza Constantemente tu Repositorio Local:</strong>
+            <p>Utiliza <code>git pull</code> para mantener tu repositorio local al día con los cambios remotos.</p>
+        </li>
+        <li>
+            <strong>Solicita Extracciones (Pull Requests):</strong>
+            <p>Abre una solicitud de extracción para fusionar tus cambios en la rama principal (<code>main</code>).</p>
+            <p>Colabora con otros miembros del equipo y revisa los cambios.</p>
+        </li>
+        <li>
+            <strong>Evita Commits que Hacen Demasiadas Cosas:</strong>
+            <p>Si un commit hace demasiadas cosas, considera dividirlo en varios commits más pequeños.</p>
+        </li>
+        <li>
+            <strong>Comparte el Contexto Necesario en el Cuerpo del Mensaje de Commit:</strong>
+            <p>Si un commit necesita más contexto, añádelo en el cuerpo del mensaje.</p>
+        </li>
+    </ol>
     
     <h2>Herramientas y recursos adicionales con Git</h2>
-    <p>Explora herramientas y recursos adicionales que pueden mejorar tu experiencia de desarrollo con Git, incluyendo interfaces gráficas y servicios en la nube como GitHub.</p>
-    
-    <h2>Herramientas a utilizar</h2>
-    <p>Asegúrate de tener instalada la siguiente herramienta para sacar el máximo provecho del curso:</p>
+    <p>Extensiones de Git para Visual Studio Code</p>
     <ul>
-        <li>Versión reciente de Git (2.40.1): Es importante tener instalada la última versión de Git para acceder a todas las funcionalidades y mejoras más recientes.</li>
-        <li>Cuenta de GitHub: Una cuenta en GitHub te permitirá aprovechar al máximo las funcionalidades de colaboración y trabajo en equipo que ofrece esta plataforma.</li>
-        <li>Editor de texto: Utiliza tu editor de texto favorito para escribir y modificar código durante el curso.</li>
+        <li>
+            <strong>GitLens:</strong> Con más de 25 millones de instalaciones, GitLens es la extensión Git más popular para Visual Studio Code. Proporciona información valiosa sobre la autoría del código y desbloquea todo el poder de Git en VS Code. Te permite ver la historia de Git, la diferencia de archivos confirmados, la información de culpabilidad (blame) y más.
+        </li>
+        <li>
+            <strong>Git History Diff:</strong> Esta extensión te permite ver la historia de Git, los detalles de los commits, la diferencia de archivos confirmados y la información de culpabilidad (blame). Puedes comparar ramas, ver la historia de archivos o carpetas, y explorar cambios de línea. También puedes ver las diferencias entre ramas y comparar archivos no confirmados con un commit específico.
+        </li>
+        <li>
+            <strong>Git Graph:</strong> Git Graph te permite visualizar un gráfico de Git de tu repositorio y realizar acciones de Git directamente desde el gráfico. Puedes ver la historia de ramas, archivos, líneas y autores. También muestra detalles de commits, diferencias y stashes.
+        </li>
     </ul>
+    <p>En resumen, estas extensiones te ayudarán a trabajar con Git de manera más eficiente dentro de Visual Studio Code. ¡Explóralas y elige las que mejor se adapten a tus necesidades! 😊</p>
     
-    <p>¡Únete a nosotros en este emocionante viaje para dominar Git y llevar tu desarrollo de software al siguiente nivel!</p>
+    
 </div>
 
     <!-- Conexión con el archivo JavaScript -->
